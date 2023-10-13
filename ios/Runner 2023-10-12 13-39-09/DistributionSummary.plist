@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>teamsio.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>E4C087ABC22FA494D4AF9E57236981247304E723</string>
+				<key>dateExpires</key>
+				<string>11/10/24</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1.0</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>E4C087ABC22FA494D4AF9E57236981247304E723</string>
+						<key>dateExpires</key>
+						<string>11/10/24</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>App.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>6D4TRLD24W</string>
+						<key>name</key>
+						<string>Anderson da Rosa Witt</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.0</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1.0</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>E4C087ABC22FA494D4AF9E57236981247304E723</string>
+						<key>dateExpires</key>
+						<string>11/10/24</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Flutter.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>6D4TRLD24W</string>
+						<key>name</key>
+						<string>Anderson da Rosa Witt</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.0</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>6D4TRLD24W.com.example.teamsio</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>6D4TRLD24W</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Runner.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>66302c2c-5c16-4ffe-8a50-6011a0618f4e</string>
+				<key>dateExpires</key>
+				<string>11/10/24</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.example.teamsio</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>6D4TRLD24W</string>
+				<key>name</key>
+				<string>Anderson da Rosa Witt</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
