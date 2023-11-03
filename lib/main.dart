@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teamsio/welcome.dart';
+import 'package:teamsio/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.light(useMaterial3: true),
       darkTheme: ThemeData.dark(useMaterial3: true),
-      home: const Welcome(),
+      home: const Home(),
     );
   }
 }
