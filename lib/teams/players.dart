@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teamsio/appbar.dart';
+import 'package:teamsio/teams/teams.dart';
 
 class Players extends StatefulWidget {
   const Players({Key? key}) : super(key: key);
@@ -11,7 +12,39 @@ class Players extends StatefulWidget {
 class _Players extends State<Players> {
   final fieldText = TextEditingController();
   String _player = "";
-  List<String> _list = [];
+  List<String> _list = [
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+    "anderson",
+  ];
 
   void handlePlayerRemoved(int index) {
     List<String> players = _list.toList();
@@ -21,6 +54,16 @@ class _Players extends State<Players> {
     setState(() {
       _list = players.toList();
     });
+  }
+
+  void handleContinueClicked() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Teams(
+            players: _list,
+          ),
+        ));
   }
 
   void handlePlayerChanged(String value) {
@@ -97,41 +140,42 @@ class _Players extends State<Players> {
                               height: constraints.maxHeight - 180,
                               child: Card(
                                 child: Padding(
-                                  padding: EdgeInsets.all(20),
+                                  padding: const EdgeInsets.all(20),
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
                                       const Text("Jogadores"),
                                       const Divider(),
-                                      Column(children: [
-                                        SingleChildScrollView(
-                                            child: Column(
-                                          children: _list
-                                              .asMap()
-                                              .entries
-                                              .map((e) => Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      Text(e.value),
-                                                      IconButton(
-                                                          onPressed: () {
-                                                            handlePlayerRemoved(
-                                                                e.key);
-                                                          },
-                                                          icon: const Icon(
-                                                            Icons
-                                                                .delete_outline,
-                                                            color: Colors.white,
-                                                            size: 30.0,
-                                                          )),
-                                                    ],
-                                                  ))
-                                              .toList(),
-                                        ))
-                                      ])
+                                      SizedBox(
+                                          height: constraints.maxHeight - 270,
+                                          child: SingleChildScrollView(
+                                              child: Column(
+                                            children: _list
+                                                .asMap()
+                                                .entries
+                                                .map((e) => Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      children: [
+                                                        Text(e.value),
+                                                        IconButton(
+                                                            onPressed: () {
+                                                              handlePlayerRemoved(
+                                                                  e.key);
+                                                            },
+                                                            icon: const Icon(
+                                                              Icons
+                                                                  .delete_outline,
+                                                              color:
+                                                                  Colors.white,
+                                                              size: 30.0,
+                                                            )),
+                                                      ],
+                                                    ))
+                                                .toList(),
+                                          )))
                                     ],
                                   ),
                                 ),
@@ -145,7 +189,7 @@ class _Players extends State<Players> {
         child: SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: handleContinueClicked,
               style: ButtonStyle(
                   foregroundColor:
                       MaterialStateProperty.all<Color>(Colors.white),
